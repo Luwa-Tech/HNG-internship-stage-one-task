@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Stage One Task</title>
+  </head>
+  <body>
+    <main>
+      <div id="page-wrapper">
+        <section className="details">
+          <h1 data-testid="slackUserName">Hey, I'm Umar Yusuf..</h1>
+          <p data-testid="currentDayOfTheWeek"></p>
+          <p data-testid="currentUTCTime">UTC: </p>
+          <p data-testid="myTrack">Track: Frontend Track</p>
+          <a href="#" data-testid="githubURL">Source Code</a>
+        </section>
+
+        <section className="image-container">
+          <img src="/profileimage.jpg"  alt="umarYusuf" data-testid="slackDisplayImage"/>
+        </section>
+      </div>
+
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
