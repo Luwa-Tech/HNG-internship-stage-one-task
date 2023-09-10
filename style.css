@@ -30,7 +30,6 @@ img {
 
 h1[data-testid="slackUserName"] {
     font-size: 4rem;
-    width: 70%;
 }
 
 p[data-testid="currentDayOfTheWeek"] {
