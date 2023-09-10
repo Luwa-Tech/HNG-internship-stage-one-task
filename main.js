@@ -1,17 +1,20 @@
 const date = document.querySelector('[data-testid="currentDayOfTheWeek"]')
 const utc = document.querySelector('[data-testid="currentUTCTime"]')
 
-const UTCTime = new Date()
-const UTCHours = UTCTime.getUTCHours()
-const UTCMinutes = UTCTime.getUTCMinutes()
-const UTCSeconds = UTCTime.getUTCSeconds()
+const currentDayOfTheWeek = () => {
+    const newDate = new Date()
+    const dayOfTheWeek = newDate.getDay()
+    const weekday = ['Sunday', 'Monday', 'Tuesday',
+    'Wednesday', 'Thursday', 'Friday', 'Saturday'
+    ]
 
+    date.innerText= `Current Day of The Week: ${weekday[dayOfTheWeek]}`
+}
 
-const newDate = new Date()
-const currentDayOfTheWeek = newDate.getDay()
-const weekday = ['Sunday', 'Monday', 'Tuesday',
-'Wednesday', 'Thursday', 'Friday', 'Saturday'
-]
+const utcTime = () => {
+    const currentUTC = Date.now()
+    utc.innerText = `Current UTC Time: ${currentUTC}`
+}
 
-date.innerText= `Current Day of The Week: ${weekday[currentDayOfTheWeek]}`
-utc.innerText = `Current UTC Time: ${UTCHours}:${UTCMinutes}:${UTCSeconds}`
+currentDayOfTheWeek()
+utcTime()
