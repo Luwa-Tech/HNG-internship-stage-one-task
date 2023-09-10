@@ -13,7 +13,5 @@ const weekday = ['Sunday', 'Monday', 'Tuesday',
 'Wednesday', 'Thursday', 'Friday', 'Saturday'
 ]
 
-date.innerText= `Today is ${weekday[currentDayOfTheWeek]}!`
-utc.innerText = `${UTCHours}:${UTCMinutes}:${UTCSeconds} UTC`
-
-console.log(weekday[currentDayOfTheWeek])
+date.innerText= `Current Day of The Week: ${weekday[currentDayOfTheWeek]}`
+utc.innerText = `Current UTC Time: ${UTCHours}:${UTCMinutes}:${UTCSeconds}`
